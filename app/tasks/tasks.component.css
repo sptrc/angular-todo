@@ -1,0 +1,10 @@
+
+.tasks{
+  list-style-type: none;
+  padding-left: 0.5rem;
+  text-transform: capitalize;
+}
+
+.task input:checked + label{
+  text-decoration: line-through;
+}

@@ -1,0 +1,8 @@
+<ul class="tasks">
+  <h3>Tasks</h3>
+  <li class="task" *ngFor="let task of tasks">
+    <input type="checkbox" [id]="'task'+task.id" (click)="done(task.id)" [checked]="task.done">
+    <label [for]="'task'+task.id">{{task.task}}</label>
+    <span class="delete" role="button" *ngIf="task.done" (click)="delete(task.id)">❌</span>
+  </li>
+</ul>

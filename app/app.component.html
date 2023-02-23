@@ -1,0 +1,5 @@
+<div class="container">
+
+<app-add-task (newItemEvent)="addTask($event)"></app-add-task>
+  <app-tasks [tasks]="updated" (doneEvent)="complete($event)" (deleteEvent)="del($event)"></app-tasks>
+</div>
